@@ -1,0 +1,12 @@
+name = "debtor-worker"
+type = "javascript"
+
+account_id = "your-cloudflare-account-id"
+workers_dev = true
+
+[build]
+command = "npm install"
+
+[build.upload]
+dir = "."
+main = "worker.js"
